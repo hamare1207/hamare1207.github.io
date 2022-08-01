@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Inconsolata', monospace;
+	background: linear-gradient(-25deg, #5BA95D 10%, #478d73 10%, #478d73 20%, #446b6a 20%, #446b6a 30%, #404c54 30%, #404c54 40%, #32343e 40% ) fixed;
+	-webkit-text-size-adjust: 100%;
+}
+
+#box {
+	color: #000;
+	background-color: rgba( 255, 255, 255, 0.2 );
+	box-shadow:0 0 .25em rgba(0,0,0,.25);
+	box-sizing:border-box;
+	border-radius:.25em;
+	position: absolute;
+	width: 32rem;
+	height: 18rem;
+	margin: auto;
+	padding: 0;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+#box a {text-decoration: none;}
+#box a:link { color: #fff; }
+#box a:visited { color: #fff; }
+#box a:hover { color: #fff; }
+#box a:active { color: #fff; }
+
+.name {
+	padding: 2.0rem 2.4rem;
+	margin: 0;
+}
+
+.name h1 {
+	font-size: 4.0rem;
+	padding: 0.5rem 1.5rem;
+	margin: 0;
+}
+
+.name h2 {
+	font-size: 1.6rem;
+	padding: 0;
+	margin: 0;
+}
+
+.bio {
+	padding: 0.5rem 2.4rem 2.0rem;
+	margin: 0;
+}
+
+.bio h3 {
+	font-size: 1.2rem;
+	padding: 0 1.0rem;
+	margin: 0;
+}
