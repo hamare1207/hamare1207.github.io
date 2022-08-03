@@ -4,6 +4,7 @@ body {
 	font-family: 'Inconsolata', monospace;
 	background: linear-gradient(-25deg, #5BA95D 10%, #478d73 10%, #478d73 20%, #446b6a 20%, #446b6a 30%, #404c54 30%, #404c54 40%, #32343e 40% ) fixed;
 	-webkit-text-size-adjust: 100%;
+	text-decoration: none;
 }
 
 #box {
