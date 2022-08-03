@@ -56,3 +56,11 @@ body {
 	padding: 0 1.0rem;
 	margin: 0;
 }
+
+#footer {
+	text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
