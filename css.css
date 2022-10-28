@@ -1,10 +1,30 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+:root {
+	--cursor-visibility: hidden; }
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	font-family: 'Inconsolata', monospace;
+	font-size: 4vmin;
+	line-height: 4.1vmin;
+	font-weight: normal; }
 
 body {
-	font-family: 'Inconsolata', monospace;
-	background: linear-gradient(-25deg, #5BA95D 10%, #478d73 10%, #478d73 20%, #446b6a 20%, #446b6a 30%, #404c54 30%, #404c54 40%, #32343e 40% ) fixed;
-	-webkit-text-size-adjust: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background:#1b1d1e
 }
+
+body #terminal{color:#bbb}
+body #user{color:#23e298}
+body #dir{color:#d08010}
 
 a {text-decoration: none;}
 a:link { color: #000; }
@@ -12,55 +32,24 @@ a:visited { color: #000; }
 a:hover { color: #000; }
 a:active { color: #000; }
 
-#box {
-	color: #000;
-	background-color: rgba( 255, 255, 255, 0.5 );
-	box-shadow:0 0 .25em rgba(0,0,0,.25);
-	box-sizing:border-box;
-	border-radius:.25em;
-	position: absolute;
-	width: 32rem;
-	height: 18rem;
-	margin: auto;
-	padding: 0;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-}
+#content {
+  min-width: 82vmin;
+  min-height: 82vmin; }
 
-.name {
-	padding: 2.0rem 2.4rem;
-	margin: 0;
-}
+::-webkit-scrollbar {
+  width: 10px; }
 
-.name h1 {
-	font-size: 4.0rem;
-	padding: 0.5rem 1.5rem;
-	margin: 0;
-}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: inset 0 0 1px white; }
 
-.name h2 {
-	font-size: 1.6rem;
-	padding: 0;
-	margin: 0;
-}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px white; }
 
-.bio {
-	padding: 0rem 2.4rem;
-	margin: 0;
-}
-
-.bio h3 {
-	font-size: 1.0rem;
-	padding: 0 1.0rem;
-	margin: 0;
-}
-
-#footer {
-	text-align: center;
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-}
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 2.5vmin;
+    line-height: 2.6vmin; }
+  #content {
+    min-width: 60vmin; } }
