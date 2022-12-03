@@ -1,41 +1,734 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>hamare</title>
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-	<link rel="stylesheet" href="css.css">
+<html lang="ja-jp"><head>
+	<meta name="generator" content="Hugo 0.107.0">
+    <title>hamare</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="hamare&#39;s Portfolio" />
+    <style>
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap");
+:root {
+  --cursor-visibility: hidden; }
 
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VRVWGWVDXJ"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-	
-		gtag('config', 'G-VRVWGWVDXJ');
-	</script>
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  font-family: 'M PLUS 1 Code', monospace;
+  font-size: 4vmin;
+  line-height: 4.1vmin;
+  font-weight: normal; }
 
-</head>
-<body>
-	<div id="content">
-		<strong><span id="user">hamare@kano</span><span id="terminal">:</span><span id="dir">~/</span></strong><span id="terminal">$</span>
-			<span id="terminal">cd mydir</span><br>
-		<strong><span id="user">hamare@kano</span><span id="terminal">:</span><span id="dir">~/mydir</span></strong><span id="terminal">$</span>
-			<span id="terminal">cat profile.md</span><br>
-			<span id="terminal">hello, world!<br>cdr 1401 sc u.k.<br><br></span>
-		<strong><span id="user">hamare@kano</span><span id="terminal">:</span><span id="dir">~/mydir</span></strong><span id="terminal">$</span>
-			<span id="terminal">tree ./my_act/</span><br>
-			<strong><span id="dir">./my_act/</span><br></strong>
-			<span id="terminal">├── Programming (C, Go, Py)</span><br>
-			<span id="terminal">├── Firefox</span><br>
-			<span id="terminal">└── AviUtl</span><br><br>
-		<strong><span id="user">hamare@kano</span><span id="terminal">:</span><span id="dir">~/mydir</span></strong><span id="terminal">$</span>
-			<span id="terminal">tree ./my_pc/</span><br>
-			<strong><span id="dir">./my_pc/</span><br></strong>
-			<span id="terminal">├── Windows 10</span><br>
-			<span id="terminal">└── Celeron</span><br><br>
-		<strong><span id="user">hamare@kano</span><span id="terminal">:</span><span id="dir">~/mydir</span></strong><span id="terminal">$</span>
-	</div>
-</body>
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+#content {
+  min-width: 82vmin;
+  min-height: 82vmin; }
+
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: inset 0 0 1px white; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px white; }
+
+.cursor, #cd:after, #whoami:after, #cat:after, #tree:after {
+  visibility: var(--cursor-visibility);
+  content: "|";
+  overflow: hidden;
+  color: white;
+  animation: blink 500ms linear infinite alternate; }
+
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 2.5vmin;
+    line-height: 2.6vmin; }
+  #content {
+    min-width: 60vmin; } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+body{background:#1b1d1e}body #terminal{color:#BBBBBB}body #user{color:#23E298}body #dir{color:#D08010}body .Typewriter__cursor{color:#BBBBBB}a{color:#BBBBBB}
+
+        
+.navFull {
+    background-color: #353535;
+    font-family: "Courier New";
+    font-size: 17px;
+    display: inline;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding-top: 5px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navCredits {
+    float: right;
+    padding-right: 18px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+#content::after {
+    content: "\a\a";
+    white-space: pre;
+}
+        
+        
+</style>
+
+
+
+</head><body><div id="content">
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+        
+            
+            
+
+            
+            
+            
+                
+            
+            
+            
+            
+            
+        
+            
+            
+
+            
+            
+            
+                
+            
+            
+            
+            
+            
+        
+    
+
+    
+
+    
+
+    
+    
+    
+
+    <span id="ps1_01"></span> <span id="cd"></span> <br>
+<span id="ps1_02"></span> <span id="cat"></span> <br>
+<span id="std_out_01"></span> <br>
+<span id="ps1_03"></span> <span id="tree"></span> <br>
+<span id="std_out_02"></span> <br>
+<span id="ps1_04"></span>
+
+<script type="text/javascript">
+    async function typewriter(text, elementId, waitAfter) {
+        var n = 0,
+            isTag = false
+        addText = "";
+        const el = document.getElementById(elementId);
+
+        const wait = () => new Promise(r => setTimeout(r, waitAfter));
+        const nowait = () => new Promise(r => r());
+
+        const render = () => el.innerHTML = (text.slice(0, n + 1) + addText);
+
+        const cursor = document.createElement('span');
+        cursor.id = "blink";
+
+        el.style.setProperty("--cursor-visibility", "visible");
+        while (n < text.length) {
+            if (text.charAt(n + 1) === "<") isTag = true;
+            if (text.charAt(n + 1) === ">") isTag = false;
+
+            if (isTag) {
+                n++;
+                continue;
+            }
+
+            requestAnimationFrame(render);
+
+            if (waitAfter === 0) {
+                await nowait();
+            } else {
+                await wait();
+            }
+
+            n++;
+        }
+        el.style.setProperty("--cursor-visibility", "collapse");
+    }
+
+    function parseDelay(d) {
+        const parsed = parseInt(d, 10);
+        if (isNaN(parsed)) return 0;
+        return parsed;
+    }
+
+    const ps1Delay = parseDelay("0"),
+        stdoutDelay = parseDelay("0"),
+        commandDelay = parseDelay("25");
+    const typeeffetct = async () => {
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003ehamare@pc\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_01", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003ecd github\u003c\/span\u003e", "cd", commandDelay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003ehamare@pc\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/github\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_02", ps1Delay); await typewriter("\u003cspan id=terminal\u003ecat profile.md\u003c\/span\u003e", "cat", commandDelay);
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e  hello, world!\u003cbr\u003e  cdr 1401 sc u.k.\u003cbr\u003e\n  \u003c\/span\u003e", "std_out_01", stdoutDelay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003ehamare@pc\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/github\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_03", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003etree .\/sitemap\/\u003c\/span\u003e", "tree", commandDelay);
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cspan id=\u0027terminal\u0027\u003e\u003cstrong\u003e\u003cspan id=\u0027dir\u0027\u003e.\/sitemap\/\u003c\/span\u003e\u003c\/strong\u003e\u003cbr\u003e├── \u003ca href=\u0027https:\/\/hamare.cf\/about\/\u0027\u003eabout\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e└── \u003ca href=\u0027https:\/\/hamare.cf\/post\/\u0027\u003epost\u003c\/a\u003e\u003c\/span\u003e\u003cbr\u003e", "std_out_02", stdoutDelay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003ehamare@pc\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/github\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_04", ps1Delay);
+        return;
+    }
+
+    typeeffetct()
+</script>
+
+
+        </div>
+        
+        <span class="navFull">
+        
+    
+    
+
+    
+        
+
+<span>
+    <a href="/">Home</a>
+    <span>&#8192;|&#8192;</span>
+    <a href="./..">/</a>
+</span>
+
+    
+
+        
+        <small><span class="navCredits">
+            <a href="https://gohugo.io/">Hugo</a>
+            | 
+            <a href="https://github.com/Yukuro/hugo-theme-shell" target="_blank" rel="noopener">Shell</a>
+        </span></small>
+</span>
+        
+         
+    </body>
 </html>
