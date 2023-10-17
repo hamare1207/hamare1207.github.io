@@ -2,12 +2,31 @@
 
 body {
 	font-family: 'Inconsolata', monospace;
-/* green
+/*
+green
 	background: linear-gradient(-25deg, #5BA95D 10%, #478d73 10%, #478d73 20%, #446b6a 20%, #446b6a 30%, #404c54 30%, #404c54 40%, #32343e 40% ) fixed;
-*/
+orange
 	background: linear-gradient(-25deg, #e64e1f 10%, #b33d18 10%, #b33d18 20%, #802c11 20%, #802c11 30%, #4d1a0a 30%, #4d1a0a 40%, #190903 40% ) fixed;
+*/
+	background: linear-gradient(-25deg, #23074D, #FF5722);
+	background-size: 400% 400%;
+	animation: GradientBackground 10s ease infinite;
 	-webkit-text-size-adjust: 100%;
 }
+
+@keyframes GradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+};
 
 a:link { color: #000; }
 a:visited { color: #000; }
